@@ -1,8 +1,8 @@
 import styles from '../styles/Header.module.css';
+import ContactLinks from './ContactLinks';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 const Header = () => {
-  const router = useRouter();
   return (
     <header className={styles.header}>
       <p>Hi,</p>
@@ -12,20 +12,7 @@ const Header = () => {
         Texas, and currently live in Tochigi, Japan. I speak fluent english and
         japanese.
       </h3>
-      <ul>
-        <li>
-          <Image
-            className="scales pointer"
-            onClick={() => {
-              router.push('https://github.com/arito7');
-            }}
-            src="/images/github-icon.svg"
-            width="30"
-            height="30"
-            alt="Github Link"
-          />
-        </li>
-      </ul>
+      <ContactLinks />
     </header>
   );
 };
