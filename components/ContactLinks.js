@@ -9,7 +9,7 @@ const ContactLinks = () => {
         <img
           className="pointer scales"
           style={{ accentColor: 'white', width: 30, height: 30 }}
-          src="/images/github-icon-white.svg"
+          src="/images/icons/github-icon-white.svg"
           alt="Discord Icon"
         />
       </li>

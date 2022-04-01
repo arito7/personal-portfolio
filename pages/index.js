@@ -7,7 +7,7 @@ import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <>
       <HeadComponent />
       <Header />
       <main>
@@ -15,6 +15,6 @@ export default function Home() {
         <Projects />
       </main>
       <Footer />
-    </div>
+    </>
   );
 }
