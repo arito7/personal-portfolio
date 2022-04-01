@@ -25,7 +25,7 @@ const Techstack = () => {
                 className="scales"
                 width={iconWH}
                 height={iconWH}
-                src={`/images/${icon}`}
+                src={`/images/icons/${icon}`}
                 alt={alt}
               />
             </li>
