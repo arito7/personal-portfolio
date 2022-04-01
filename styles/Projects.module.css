@@ -11,3 +11,8 @@
   color: black;
   border-radius: 1rem;
 }
+
+.list {
+  display: grid;
+  justify-items: center;
+}

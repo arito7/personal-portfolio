@@ -1,4 +1,5 @@
 import styles from '../styles/Projects.module.css';
+import Image from 'next/image';
 
 const Projects = () => {
   const projects = [
@@ -11,17 +12,19 @@ const Projects = () => {
   return (
     <section className={styles.projects}>
       <h2 className="section-title">Projects</h2>
-      <ul>
+      <ul className={styles.list}>
         {projects.map(({ title, img, desc }) => {
           return (
-            <li key={title}>
+            <li key={title} style={{ maxWidth: '40%' }}>
               <div className={styles.card}>
                 <h3>{title}</h3>
-                <img
+                <Image
                   style={{
                     borderRadius: '1rem',
-                    height: 150,
                   }}
+                  layout="responsive"
+                  height={795}
+                  width={787}
                   alt="Project Image"
                   src={`/images/${img}`}
                 />
