@@ -1,9 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&display=swap');
+
+:root {
+  --blue: #0070f3;
+  --white: #eee;
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Baloo 2', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -17,12 +24,19 @@ a {
 
 .section-title {
   text-align: center;
+  font-size: 2rem;
+}
+
+ul,
+h2,
+p,
+h1 {
+  margin: 0;
+  padding: 0;
 }
 
 ul {
   list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .scales {
@@ -37,4 +51,12 @@ ul {
 
 .pointer {
   cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.blue-bg {
+  background-color: #0070f3;
 }
