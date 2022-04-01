@@ -5,7 +5,7 @@ const Techstack = () => {
   const iconWH = '60px';
   return (
     <div className={styles.techstack}>
-      <h2>Techstack</h2>
+      <h2 className="section-title">Techstack</h2>
       <ul>
         <li>
           <Image
