@@ -3,82 +3,34 @@ import styles from '../styles/Techstack.module.css';
 
 const Techstack = () => {
   const iconWH = '60px';
+  const stackicons = [
+    { alt: 'HTML5 icon', icon: 'html-5.svg' },
+    { alt: 'CSS3 icon', icon: 'css-3.svg' },
+    { alt: 'JS icon', icon: 'javascript.svg' },
+    { alt: 'React icon', icon: 'react.svg' },
+    { alt: 'NextJS icon', icon: 'nextjs.svg' },
+    { alt: 'NodeJS icon', icon: 'nodejs.svg' },
+    { alt: 'MongoDB icon', icon: 'mongodb.svg' },
+    { alt: 'MaterializeCSS icon', icon: 'materializecss.svg' },
+    { alt: 'EJS icon', icon: 'ejs.svg' },
+  ];
   return (
     <div className={styles.techstack}>
       <h2 className="section-title">Techstack</h2>
       <ul>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/html-5.svg"
-            alt="HTML5 logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/css-3.svg"
-            alt="CSS3 logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/javascript.svg"
-            alt="JS logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/react.svg"
-            alt="React logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/nextjs.svg"
-            alt="NextJS logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/nodejs.svg"
-            alt="NodeJS logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/mongodb.svg"
-            alt="MongoDB logo"
-          />
-        </li>
-        <li>
-          <Image
-            className="scales"
-            width={iconWH}
-            height={iconWH}
-            src="/images/materializecss.svg"
-            alt="MaterializeCSS logo"
-          />
-        </li>
+        {stackicons.map(({ icon, alt }) => {
+          return (
+            <li key={icon}>
+              <Image
+                className="scales"
+                width={iconWH}
+                height={iconWH}
+                src={`/images/${icon}`}
+                alt={alt}
+              />
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
