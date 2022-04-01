@@ -1,9 +1,9 @@
 .header {
   padding: 2rem;
   margin: 0;
-  color: #eee;
-  background-color: #0070f3;
+  color: var(--white);
   text-align: center;
+  background-color: var(--blue);
 }
 
 .header > p {
