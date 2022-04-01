@@ -1,5 +1,5 @@
 import styles from '../styles/Projects.module.css';
-import Image from 'next/image';
+
 const Projects = () => {
   const projects = [
     {
@@ -17,11 +17,11 @@ const Projects = () => {
             <li key={title}>
               <div className={styles.card}>
                 <h3>{title}</h3>
-                <Image
-                  layout="intrinsic"
-                  width={787}
-                  height={795}
-                  style={{ borderRadius: '1rem' }}
+                <img
+                  style={{
+                    borderRadius: '1rem',
+                    height: 150,
+                  }}
                   alt="Project Image"
                   src={`/images/${img}`}
                 />

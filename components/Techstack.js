@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from '../styles/Techstack.module.css';
 
 const Techstack = () => {
@@ -21,10 +20,9 @@ const Techstack = () => {
         {stackicons.map(({ icon, alt }) => {
           return (
             <li key={icon}>
-              <Image
+              <img
+                style={{ width: iconWH, height: iconWH }}
                 className="scales"
-                width={iconWH}
-                height={iconWH}
                 src={`/images/icons/${icon}`}
                 alt={alt}
               />

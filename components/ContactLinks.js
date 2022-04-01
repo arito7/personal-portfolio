@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import styles from '../styles/ContactLinks.module.css';
 import { useRouter } from 'next/router';
 
@@ -7,11 +6,9 @@ const ContactLinks = () => {
   return (
     <ul className={styles.contactlinks}>
       <li>
-        <Image
+        <img
           className="pointer scales"
-          width="30"
-          height={30}
-          style={{ accentColor: 'white' }}
+          style={{ accentColor: 'white', width: 30, height: 30 }}
           src="/images/github-icon-white.svg"
           alt="Discord Icon"
         />

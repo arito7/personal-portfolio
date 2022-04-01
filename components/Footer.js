@@ -1,5 +1,4 @@
 import styles from '../styles/Footer.module.css';
-import Image from 'next/image';
 import ContactLinks from './ContactLinks';
 const Footer = () => {
   return (
