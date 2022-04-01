@@ -1,0 +1,24 @@
+.techstack {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+.techstack > h2 {
+  color: #0070f3;
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.techstack > ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-items: center;
+}
+
+.techstack > ul > li {
+  width: 100%;
+  text-align: center;
+}

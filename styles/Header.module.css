@@ -1,0 +1,28 @@
+.header {
+  padding: 2rem;
+  margin: 0;
+  color: #eee;
+  background-color: #0070f3;
+  text-align: center;
+}
+
+.header > p {
+  font-size: 2rem;
+  margin: 0 auto;
+}
+
+.header > h1 {
+  margin: 0 auto;
+}
+
+.icon-link {
+  scale: 1;
+  cursor: pointer;
+  transform: scale(1);
+  transition-property: transform;
+  transition-duration: 300ms;
+}
+
+.icon-link:hover {
+  transform: scale(0.95);
+}
