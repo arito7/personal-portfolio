@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import styles from '../styles/ContactLinks.module.css';
 import { useRouter } from 'next/router';
 
@@ -6,11 +7,15 @@ const ContactLinks = () => {
   return (
     <ul className={styles.contactlinks}>
       <li>
-        <img
+        <Image
+          width={30}
+          height={30}
           className="pointer scales"
-          style={{ accentColor: 'white', width: 30, height: 30 }}
           src="/images/icons/github-icon-white.svg"
-          alt="Discord Icon"
+          alt="Github Icon"
+          onClick={() => {
+            router.push('https://github.com/arito7');
+          }}
         />
       </li>
     </ul>
