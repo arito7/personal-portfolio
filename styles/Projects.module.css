@@ -5,14 +5,34 @@
 }
 
 .card {
+  cursor: pointer;
   background-color: var(--white);
   text-align: center;
+  box-shadow: var(--shadow);
   padding: 1rem;
   color: black;
   border-radius: 1rem;
+  transition-property: box-shadow;
+  transition-duration: 300ms;
+}
+
+.card:hover {
+  box-shadow: var(--hover-shadow);
 }
 
 .list {
   display: grid;
   justify-items: center;
+}
+
+.projecttitle {
+  margin-bottom: 0.5rem;
+}
+
+.projectimg {
+  border-radius: 1rem;
+}
+
+.projectdesc {
+  margin-top: 0.5rem;
 }
